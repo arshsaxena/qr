@@ -57,15 +57,18 @@ nav{
 .input-div{  
     width: 100%;  
 }   
-.input-div input {  
+.input-div textarea {  
     padding: 10px 15px;
     font-size: 17px;
-    border-radius: 50px;
+    border-radius: 15px;
     background-color: white;
     border: none;
-    margin: 20px 0;
+    margin: 19px 0;
     width: 90%;
+    height: 40px;
+    overflow-y: hidden;
     font-family: font-regular;
+    resize: none;
 }  
 .button {  
     font-family: font-regular;

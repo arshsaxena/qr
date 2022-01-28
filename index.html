@@ -63,13 +63,24 @@
                     </div>  
                 </div>  
                 <div class="input-div">  
-                    <input type="text" name="input_text" id="input_text" autocomplete="off" placeholder="arshsaxena.github.io, 1234567890, abc@xyz.com">  
+                    <textarea type="text" name="input_text" id="input_text" autocomplete="off" placeholder="example.com, 1234567890, abc@xyz.com"></textarea>
                     <button class="button" type="submit">GENERATE</button>  
                 </div>
             </div>
             <div class="qr-code" style="display: none;"></div>  
             <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
             <script src="/qr/pages/first-page/index.js"></script>
+            <script>
+                var textarea = document.querySelector('textarea');
+                textarea.addEventListener('keydown', autosize);
+                function autosize(){
+                var el = this;
+                setTimeout(function(){
+                    el.style.cssText = 'height:auto; padding:0';
+                    el.style.cssText = 'height:' + el.scrollHeight + 'px';
+                },0);
+                }
+            </script>
         </div>
     </div>
     <span class="footer-conatiner">
