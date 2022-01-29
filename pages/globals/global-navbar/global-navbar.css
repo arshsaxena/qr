@@ -38,7 +38,7 @@ nav {
 }
 
 
-@media only screen and (max-device-width: 980px) {
+@media screen and (max-width: 980px) {
     html{
         background-color: #1d1d1f;
     }

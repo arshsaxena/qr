@@ -123,7 +123,7 @@ nav{
 }
 
 /* Mobiles and some tabs */
-@media only screen and (max-device-width: 820px) {
+@media screen and (max-width: 820px) {
     html{
         background-color: #1d1d1f;
         margin: 0px;
