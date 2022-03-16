@@ -26,6 +26,7 @@ nav {
 .nav-content a {
     display: block;
     line-height: 44px;
+    color: transparent;
 }
 .logo-div{
     max-width: 980px;
